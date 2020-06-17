@@ -3,12 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+   background: url(./img/background.jpeg) no-repeat center/cover;
 
+}
+.top{
+  background-color: rgba(99, 210, 238, 0.281);
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+h2{
+  text-align: center;
+  color:red;
 }
 
 .app-wrapper {
@@ -37,7 +47,7 @@ header {
   line-height: 1;
 }
 .subtitle {
-  color: #171717;
+  color: red;
   font-size: 28px;
   text-transform: uppercase;
   font-weight: 300;
@@ -46,8 +56,18 @@ header {
 
 .wild-pokemon {
   min-height: 300px;
-  background: firebrick;
-  padding: 15px;
+  /* background: url(./img/pokemonbg.png); */
+  /* padding: 15px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius:50%;
+  width: 500px;
+  height: 500px;
+  color: #fff;
+  background: red;
+  text-align: center;
+  padding-top:100px;
+
 }
 .wild-pokemon h2 {
   color: #F3F3F3;
@@ -69,6 +89,9 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
+}
+.catch-btn{
+  border-radius:10vh;
 }
 
 .wild-pokemon .catch-btn {
@@ -130,4 +153,13 @@ header {
 
 .pokedex-list .pokemon .sprite {
   width: 100%;
+}
+.pokemon{
+  color:black;
+  text-align:center;
+}
+
+.alignment{
+  display:flex;
+  justify-content: center;
 }

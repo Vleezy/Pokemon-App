@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     encounterWildPokemon()
-  }, [] );
+  },  );
 
   const pokeId = () => {
     const min = Math.ceil(1)
@@ -46,18 +46,19 @@ function App() {
 
   return (
     <div className="app-wrapper">
-        <header>
-          <h1 className="title">React Hooks</h1>
-          <h3 className="subtitle">With Pokémon</h3>
+        <header class="top">
+          <h1 className="title">Choose Your</h1>
+          <h3 className="subtitle">Pokémon</h3>
         </header>
 
+<div class="alignment">
         <section className="wild-pokemon">
           <h2>Wild Encounter</h2>
           <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + wildPokemon.id + ".png"} className="sprite" alt="pokemon" />
           <h3>{wildPokemon.name}</h3>
           <button className="catch-btn" onClick={() => catchPokemon(wildPokemon)}>CATCH</button>
         </section>
-
+</div>
         <section className="pokedex">
           <h2>Pokédex</h2>
           <div className="pokedex-list">
